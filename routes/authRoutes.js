@@ -8,7 +8,7 @@ app.get(
     '/auth/google/callback',
     passport.authenticate('google')
     ,(req,res)=>{
-        res.redirect('/surveys')
+        res.redirect('/')
     })
 
 app.get('/api/current_user',(req,res)=>{
